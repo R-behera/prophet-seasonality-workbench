@@ -1,0 +1,9 @@
+
+services:
+  api:
+    build: .
+    image: prophet-seasonality-workbench:latest
+    ports:
+      - "8000:8000"
+    env_file:
+      - .env.example

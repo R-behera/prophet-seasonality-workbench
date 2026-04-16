@@ -1,0 +1,87 @@
+{
+  "upstream": {
+    "owner": "facebook",
+    "repo": "prophet",
+    "source_url": "https://github.com/facebook/prophet",
+    "local_path": "/Users/Rb/Documents/LLM based projects /sources/facebook__prophet",
+    "branch": "main",
+    "default_branch": "main",
+    "commit": "181f4479878bea9234973e0fdfd46403657fed34",
+    "fork_requested": false,
+    "fork_result": ""
+  },
+  "audit": {
+    "file_count": 382,
+    "text_file_count": 117,
+    "top_suffixes": [
+      [
+        ".png",
+        88
+      ],
+      [
+        ".rd",
+        71
+      ],
+      [
+        ".html",
+        51
+      ],
+      [
+        ".py",
+        27
+      ],
+      [
+        ".md",
+        21
+      ],
+      [
+        "<none>",
+        18
+      ],
+      [
+        ".csv",
+        16
+      ],
+      [
+        ".scss",
+        16
+      ]
+    ],
+    "style_counts": {
+      "other": 148,
+      "PascalCase": 21,
+      "hidden": 7,
+      "kebab-case": 7,
+      "snake_case": 199
+    },
+    "token_hits": {
+      "TODO": [
+        "python/prophet/plot.py",
+        "python/scripts/generate_holidays_file.py"
+      ]
+    },
+    "findings": [
+      "No obvious tests directory or test files detected.",
+      "No obvious Python dependency manifest was found.",
+      "Mixed filename conventions detected: PascalCase, kebab-case, snake_case.",
+      "Open maintenance markers detected: TODO in 2 file(s).",
+      "Large files that may benefit from decomposition: python/prophet/forecaster.py (2115 lines), python/prophet/plot.py (1147 lines), python/prophet/tests/test_prophet.py (984 lines).",
+      "Notebook-heavy repo without an obvious matching test surface."
+    ],
+    "strengths": [
+      "Repository has a top-level README.",
+      "Repository exposes a dedicated docs surface.",
+      "Repository has GitHub Actions or another CI entry point.",
+      "Repository includes container packaging signals."
+    ],
+    "largest_files": [
+      "python/prophet/forecaster.py (2115 lines)",
+      "python/prophet/plot.py (1147 lines)",
+      "python/prophet/tests/test_prophet.py (984 lines)"
+    ],
+    "has_tests": false,
+    "has_docs": true,
+    "has_ci": true,
+    "has_docker": true
+  }
+}

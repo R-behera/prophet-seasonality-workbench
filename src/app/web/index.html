@@ -1,0 +1,112 @@
+
+        <!doctype html>
+        <html lang="en">
+        <head>
+          <meta charset="utf-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1">
+          <title>Prophet Seasonality Workbench</title>
+          <link rel="stylesheet" href="./styles.css">
+        </head>
+        <body class="surface-aurora">
+          <div class="page layout-console eyebrow-outline headline-tall modules-3 hero-align-center">
+            <section class="hero">
+              <div class="panel hero-copy">
+                <span class="eyebrow" data-health>Planning Workspace</span>
+                <h1 id="project-title">Prophet Seasonality Workbench</h1>
+                <p id="project-summary" class="lead">Build a seasonality-first workbench for business teams that need explainable forecast components, calendar effects, and action-ready summaries.</p>
+                <ul id="project-tags" class="tag-list">
+                  <li>prophet</li><li>forecasting</li><li>business</li><li>analytics</li>
+                </ul>
+              </div>
+              <div class="panel hero-side">
+                <div class="metric-grid">
+                  <article class='card'><span>North Star</span><strong>78</strong><em>+7.1%</em></article>
+<article class='card'><span>Variance</span><strong>11%</strong><em>-1.8%</em></article>
+<article class='card'><span>Decision Cycle</span><strong>5d</strong><em>-0.5d</em></article>
+                </div>
+                <div class="mini-grid">
+                  <article class='mini-card'><span>Project Type</span><strong>ANALYTICS</strong></article><article class='mini-card'><span>Domain</span><strong>Business Forecasting</strong></article><article class='mini-card'><span>Application</span><strong>Planning Workspace</strong></article><article class='mini-card'><span>Deployment</span><strong>Docker + CI</strong></article>
+                </div>
+              </div>
+            </section>
+            <section class="app-grid">
+              <article class="panel module js-module span-normal">
+          <div class="module-header">
+            <span>Scenario 01</span>
+            <h2>Forecast Input Studio</h2>
+            <p>Model a planning scenario from the primary business and operational levers.</p>
+          </div>
+          <textarea class="js-input">{
+  &quot;features&quot;: {
+    &quot;current_conversion&quot;: 0.14,
+    &quot;baseline_conversion&quot;: 0.12,
+    &quot;volume&quot;: 2875,
+    &quot;segment&quot;: &quot;new_users&quot;
+  }
+}</textarea>
+          <div class="button-row">
+            <button class="js-run" data-endpoint="/score" data-input-mode="json">Run Scenario</button>
+          </div>
+          <pre class="js-output">Forecast confidence and planning band will appear here.</pre>
+        </article>
+<article class="panel module js-module span-wide">
+          <div class="module-header">
+            <span>Scenario 02</span>
+            <h2>Variance Explorer</h2>
+            <p>Explain how actual metrics differ from the expected planning baseline.</p>
+          </div>
+          <textarea class="js-input">{
+  &quot;metrics&quot;: {
+    &quot;acquisition&quot;: 67.5,
+    &quot;activation&quot;: 59.5,
+    &quot;retention&quot;: 68.0,
+    &quot;revenue&quot;: 119.5
+  },
+  &quot;baseline&quot;: {
+    &quot;acquisition&quot;: 62.1,
+    &quot;activation&quot;: 54.74,
+    &quot;retention&quot;: 62.56,
+    &quot;revenue&quot;: 109.94
+  }
+}</textarea>
+          <div class="button-row">
+            <button class="js-run" data-endpoint="/analyze" data-input-mode="json">Analyze Variance</button>
+          </div>
+          <pre class="js-output">Variance summary and largest movement will appear here.</pre>
+        </article>
+<article class="panel module js-module span-normal">
+          <div class="module-header">
+            <span>Scenario 03</span>
+            <h2>Planning Memo</h2>
+            <p>Turn raw scenario inputs into a concise operational recommendation.</p>
+          </div>
+          <textarea class="js-input">{
+  &quot;prompt&quot;: &quot;Recommend the next best action for Prophet Seasonality Workbench.&quot;,
+  &quot;features&quot;: {
+    &quot;current_conversion&quot;: 0.14,
+    &quot;baseline_conversion&quot;: 0.12,
+    &quot;volume&quot;: 2875,
+    &quot;segment&quot;: &quot;new_users&quot;
+  },
+  &quot;metrics&quot;: {
+    &quot;acquisition&quot;: 67.5,
+    &quot;activation&quot;: 59.5,
+    &quot;retention&quot;: 68.0,
+    &quot;revenue&quot;: 119.5
+  }
+}</textarea>
+          <div class="button-row">
+            <button class="js-run" data-endpoint="/recommend" data-input-mode="json">Draft Memo</button>
+          </div>
+          <pre class="js-output">Decision memo and next steps will appear here.</pre>
+        </article>
+            </section>
+            <footer class="footer">
+              <span>Business Forecasting • ANALYTICS • Planning Workspace</span>
+              <span>prophet-seasonality-workbench</span>
+            </footer>
+          </div>
+          <script id="bootstrap-data" type="application/json">{"project": {"slug": "prophet-seasonality-workbench", "title": "Prophet Seasonality Workbench", "project_type": "analytics", "domain": "Business Forecasting", "summary": "Build a seasonality-first workbench for business teams that need explainable forecast components, calendar effects, and action-ready summaries.", "tags": ["prophet", "forecasting", "business", "analytics"]}, "app_archetype": "planner", "ui_profile": {"layout": "console", "surface": "aurora", "font_stack": "\"Plus Jakarta Sans\", \"Segoe UI\", sans-serif", "radius": 25, "shadow": 57, "eyebrow_style": "outline", "module_columns": 3, "hero_align": "center", "headline_mode": "tall"}, "app_modules": [{"label": "Scenario 01", "title": "Forecast Input Studio", "description": "Model a planning scenario from the primary business and operational levers.", "endpoint": "/score", "input_mode": "json", "cta": "Run Scenario", "prefill": "{\n  \"features\": {\n    \"current_conversion\": 0.14,\n    \"baseline_conversion\": 0.12,\n    \"volume\": 2875,\n    \"segment\": \"new_users\"\n  }\n}", "hint": "Forecast confidence and planning band will appear here.", "span": "normal"}, {"label": "Scenario 02", "title": "Variance Explorer", "description": "Explain how actual metrics differ from the expected planning baseline.", "endpoint": "/analyze", "input_mode": "json", "cta": "Analyze Variance", "prefill": "{\n  \"metrics\": {\n    \"acquisition\": 67.5,\n    \"activation\": 59.5,\n    \"retention\": 68.0,\n    \"revenue\": 119.5\n  },\n  \"baseline\": {\n    \"acquisition\": 62.1,\n    \"activation\": 54.74,\n    \"retention\": 62.56,\n    \"revenue\": 109.94\n  }\n}", "hint": "Variance summary and largest movement will appear here.", "span": "wide"}, {"label": "Scenario 03", "title": "Planning Memo", "description": "Turn raw scenario inputs into a concise operational recommendation.", "endpoint": "/recommend", "input_mode": "json", "cta": "Draft Memo", "prefill": "{\n  \"prompt\": \"Recommend the next best action for Prophet Seasonality Workbench.\",\n  \"features\": {\n    \"current_conversion\": 0.14,\n    \"baseline_conversion\": 0.12,\n    \"volume\": 2875,\n    \"segment\": \"new_users\"\n  },\n  \"metrics\": {\n    \"acquisition\": 67.5,\n    \"activation\": 59.5,\n    \"retention\": 68.0,\n    \"revenue\": 119.5\n  }\n}", "hint": "Decision memo and next steps will appear here.", "span": "normal"}], "sample_features": {"current_conversion": 0.14, "baseline_conversion": 0.12, "volume": 2875, "segment": "new_users"}, "sample_metrics": {"acquisition": 67.5, "activation": 59.5, "retention": 68.0, "revenue": 119.5}, "knowledge_base": ["Prophet Seasonality Workbench is positioned as a Business Forecasting starter that emphasizes fast iteration, clear documentation, and production-friendly interfaces.", "The primary value proposition is: Build a seasonality-first workbench for business teams that need explainable forecast components, calendar effects, and action-ready summaries.", "Recommended operating model: ship a small API, add observability, validate outputs with stakeholder review, and monitor the top business KPI every week.", "Typical stakeholders include analytics, operations, product, and leadership teams working on prophet, forecasting, business, analytics.", "Source paper: Forecasting at Scale", "Official repo: https://github.com/facebook/prophet", "Production differentiation focus: Translate upstream business forecasting logic into stakeholder-ready dashboards, memos, and scenario controls.; Add reproducible docs, deployment-ready structure, and polished collateral for GitHub and LinkedIn.; Make the core decisions easier to interpret for product, finance, and operations partners."], "dashboard_metrics": [{"label": "North Star", "value": "78", "delta": "+7.1%"}, {"label": "Variance", "value": "11%", "delta": "-1.8%"}, {"label": "Decision Cycle", "value": "5d", "delta": "-0.5d"}]}</script>
+          <script src="./app.js"></script>
+        </body>
+        </html>

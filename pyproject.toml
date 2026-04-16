@@ -1,0 +1,15 @@
+
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "prophet-seasonality-workbench"
+version = "0.1.0"
+description = "Build a seasonality-first workbench for business teams that need explainable forecast components, calendar effects, and action-ready summaries."
+readme = "README.md"
+requires-python = ">=3.11"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
